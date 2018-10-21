@@ -47,7 +47,7 @@ Notice that all contours are closed, an interesting property of the LoG filter.
 
 ![](/docs/logchurch1.gif)
 
-CUndo this filter and apply a LoG filter with Sobel gradient convolution, same parameters as before, PC1=25, PC2=60.
+Undo this filter and apply a LoG filter with Sobel gradient convolution, same parameters as before, PC1=25, PC2=60.
 The image is now cleaner than before, but we have also lost details about the church.
 
 ![](/docs/logchurch2.gif)
@@ -55,6 +55,6 @@ The image is now cleaner than before, but we have also lost details about the ch
 Undo again. Apply now a standard LoG filter with PA=0.00001 and standard deviation of 4.0
 Now the church is roughly outlined.
 
-!(/docs/logchurch3.gif)
+![](/docs/logchurch3.gif)
 
 I think you'll make an artistic use of this filter.
