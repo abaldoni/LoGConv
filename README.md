@@ -2,7 +2,7 @@
 Applies the Laplacian-of-Gaussian edge-detection filter to pictures in various image editors.
 
 This implementation started in 1998 while working at my thesis; after 20 years I ported it to:
-* Gimp 2.x
+* GIMP 2.x
 * paint.net
 
 ## The Laplacian-of-Gaussian filter
@@ -58,3 +58,23 @@ Now the church is roughly outlined.
 ![](/docs/logchurch3.gif)
 
 I think you'll make an artistic use of this filter.
+
+## Building for GIMP
+
+Download logconv-gimp.c
+
+To build logconv-gimp for GIMP on Linux you'll need the GIMP development system installed (C compiler, GIMP headers and libraries).
+This is usually done by installing the -devel package with the package manager that comes with your distribution.
+
+Then, build logconv with:
+* gimptool-2.0 --install logconv-gimp
+
+Done!
+
+## Building for Paint.NET
+
+Download logconv-net.cs
+
+To build logconv-net.cs for Paint.net you'll need the CodeLab for Paint.NET. 
+
+Open CodeLab and load logconv-net.cs then build a DLL.
