@@ -5,7 +5,7 @@ This implementation started in 1998 while working at my thesis; after 20 years I
 * Gimp 2.x
 * paint.net
 
-## The Laplacian-of-Gaussian filter
+## The Laplacian-of-Gaussian filter
 
 The logconv filter implements an algorithm for edge detection developed in 1989 by Sotak and Boyer (read the article in Computer Vision, Graphics, and Image Processing 48, pgg. 147-189).
 
@@ -39,18 +39,18 @@ Now, a few examples...
 
 This is a church in Seydisfjordur, Iceland.
 
-!(/docs/logchurch.jpeg)
+![](/docs/logchurch.jpeg)
 
 Now we apply a standard LoG filter with PA=0.00001 and standard deviation of 2.0
 Look at how well the church's contours are outlined. But you also get a lot of edges in the background, caused by small differences in the gray levels.
 Notice that all contours are closed, an interesting property of the LoG filter.
 
-!(/docs/logchurch1.gif)
+![](/docs/logchurch1.gif)
 
 CUndo this filter and apply a LoG filter with Sobel gradient convolution, same parameters as before, PC1=25, PC2=60.
 The image is now cleaner than before, but we have also lost details about the church.
 
-!(/docs/logchurch2.gif)
+![](/docs/logchurch2.gif)
 
 Undo again. Apply now a standard LoG filter with PA=0.00001 and standard deviation of 4.0
 Now the church is roughly outlined.
